@@ -35,6 +35,13 @@ const baseDeDatos = {
 // 1) Escuchar el evento necesario para reaccionar cuando la persona
 // haga click en el botón iniciar sesión.
 
+window.addEventListener("load", function(){
+  const form = this.document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    form.prevent
+  })
+})
+
 // 2) El proceso de inicio de sesión deberá tener una demora de 3 segundos.
 // Deberás agregar la función correspondiente para simular dicha demora.
 
